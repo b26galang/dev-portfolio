@@ -1,0 +1,64 @@
+#headshot {
+    height: 300px;
+    border-radius: 50%;
+    margin: 0px 50px;
+    border: 2px solid #4F5C8D;
+}
+
+body {
+    background-image: url('img/seattle.jpg');
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    margin: 20px 400px;
+    padding: 50px;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 50px;
+    border-radius: 40px;
+}
+
+#home {
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+#page-btns {
+    margin-left: auto;
+}
+
+nav {
+    background-color: #4F5C8D;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0px 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #bfc0d0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 19px;
+}
