@@ -2,7 +2,7 @@
     height: 300px;
     border-radius: 50%;
     margin: 0px 50px;
-    /* border: 2px solid #4F5C8D; */
+    border: 2px solid #4F5C8D;
 }
 
 body {
@@ -188,7 +188,7 @@ header {
 }
 
 #techstack-div::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px; 
 }
 
 #techstack-div::-webkit-scrollbar-track {
