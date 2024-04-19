@@ -2,7 +2,7 @@
     height: 300px;
     border-radius: 50%;
     margin: 0px 50px;
-    border: 2px solid #4F5C8D;
+    /* border: 2px solid #4F5C8D; */
 }
 
 body {
@@ -13,14 +13,23 @@ body {
 
 .container {
     display: flex;
-    margin: 20px 400px;
+    margin: 20px 400px 0px;
     padding: 50px;
+    min-width: 200px;
+    justify-content: space-between;
+}
+
+.portfolio-class {
+    flex: 1;
 }
 
 article {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px 50px;
+    margin: 0px 20px;
     border-radius: 40px;
+    min-width: 140px;
+    overflow: hidden;
 }
 
 #home {
@@ -55,10 +64,155 @@ nav ul li a:hover {
     color: #bfc0d0;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #4F5C8D;  
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    width: 100%;
+}
+
+.social-icon {
+    height: 30px;
+    margin: 6px;
+}
+
 a {
     text-decoration: none;
 }
 
 p {
-    font-size: 19px;
+    font-size: 20px;
+}
+
+article p {
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.logo-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    margin: 0px 470px 60px;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.logo {
+    height: 50px;
+    margin: 10px;
+}
+
+.bio-img {
+    width: auto;
+    min-width: 140px;
+    max-width: 200px;
+}
+
+#image-with-text, #logo-with-text {
+    overflow: hidden;
+}
+
+.image-with-text img {
+    float: left;
+    margin-right: 20px;
+}
+
+.logo-with-text img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#logo-with-text li {
+    list-style: none;
+}
+
+/* logos on bio page */
+.logo-img {
+    height: 50px;
+}
+
+#techstack-div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    width: 100%;
+    max-width: 860px;
+    max-height: 500px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    text-decoration: none;
+    overflow-y: auto;
+}
+
+#education-div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    width: 100%;
+    max-width: 860px;
+    max-height: 400px;
+    margin: 0 auto;
+    padding: 20px 50px 50px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#education-div h4 {
+    margin-top: 0;
+}
+
+.tech-stack-list {
+    margin:20px 0px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#techstack-div::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+#techstack-div::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+#techstack-div::-webkit-scrollbar-thumb {
+    background-color: #BFC0D0;
+    border-radius: 10px; 
+}
+
+.logo {
+    display: block; 
+    margin-bottom: 0;
+}
+
+.centered-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
 }
