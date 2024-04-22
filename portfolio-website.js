@@ -1,3 +1,5 @@
+// temporary slider
+
 let slideIndex = 1;
 showDivs(slideIndex);
 

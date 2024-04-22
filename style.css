@@ -276,11 +276,15 @@ nav ul li a:hover::after {
 .project-slideshow button {
     background-color: #000;
     color: #fff;
-    height: 30px;
+    height: 25px;
     width: 30px;
-    font-weight: 700;
+    font-weight: 400;
     border: none;
-    border-radius: 50%;
+
+}
+
+.project-slideshow button:hover {
+    font-weight: 700;
 }
 
 .portfolio-class ul li {
