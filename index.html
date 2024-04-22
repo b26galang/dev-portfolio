@@ -6,14 +6,17 @@
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="#home-bg" id="home">Bridget Galang</a></li>
+            <li><a href="#home" id="bridget-galang">Bridget Galang</a></li>
             <li id="page-btns">
                 <a href="#aboutme">About Me</a>
                 <a href="#experience">Experience</a>
@@ -22,7 +25,7 @@
         </ul>
     </nav>
     <!--Home Page Section -->
-    <div id="home-bg">
+    <div id="home">
         <div class="home">
             <div>
                 <h1>Hi! I'm Bridget Galang.</h1>
@@ -262,22 +265,66 @@
             <h1 class="main-header">Portfolio</h1>
         </header>
         <article class="portfolio-class">
-            <h2>Town Talk(2023)</h2>
+            <div class="project-container">
+                <div class="project-slideshow">
+                    <img class="townTalk" src="img/towncomplaint1.jpg">
+                    <img class="townTalk" src="img/towncomplaint2.jpg">
+                    <img class="townTalk" src="img/towncomplaint3.jpg">
+                    <img class="townTalk" src="img/towncomplaint4.jpg">
+                    <br>
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+                <div class="project-description">
+                    <h2>Town Talk(2023)</h2>
+                    <p>
+                        Developed an application enabling villagers to submit issues that they have noticed in the town.
+                        The review board members can look over these issues and create meetings which can be viewed
+                        by villagers and display information on what needs to be discussed. The theme of this project
+                        was heavily inspired from a favorite childhood game of mine: MapleStory.
+                    </p>
+                    <h4>Technologies and Methodologies: </h4>
+                    <p>HTML, CSS, TypeScript, React, Java, Spring Framework, Spring Boot, Spring Data, Spring MVC,
+                        Spring Test, PostgreSQL, DBBeaver, AWS S3, AWS RDS, Postman, Docker, REST
+                    </p>
+                    <h4>Links:</h4>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/b26galang/project-2-app" target="_blank">Frontend
+                                Repository</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/b26galang/project-2-back-end" target="_blank">Backend
+                                Repository</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="portfolio-class">
+            <h2>Character Database (2023)</h2>
             <p>
-                Developed an application enabling villagers to submit issues that they have noticed in the town.
-                The review board members can look over these issues and create meetings which can be viewed
-                by villagers and display information on what needs to be discussed. The theme of this project was
-                heavily
-                inspired from a favorite childhood game of mine: MapleStory.
+                Developed an application for creating and managing characters within a game environment.
+                Users can create characters while specifying attributes(name, job, weapon, etc.), delete characters, and
+                efficiently search
+                through their character database using a filter system. This project draws inspiration from the
+                experience of character creation in MMO games.
+            </p>
+
+            <h4>Technologies and Methodologies: </h4>
+            <p>HTML, CSS, TypeScript, React, Java, Spring Framework, Spring Boot, Spring Data, Spring MVC,
+                Spring Test, PostgreSQL, DBBeaver, AWS S3, AWS RDS, Postman, REST
             </p>
             <div>
+
                 <h4>Links:</h4>
                 <ul>
                     <li>
-                        <a href="https://github.com/b26galang/project-2-app" target="_blank">Frontend Repository</a>
+                        <a href="https://github.com/b26galang/character-app" target="_blank">Frontend Repository</a>
                     </li>
                     <li>
-                        <a href="https://github.com/b26galang/project-2-back-end" target="_blank">Backend Repository</a>
+                        <a href="https://github.com/b26galang/character-back-end" target="_blank">Backend Repository</a>
                     </li>
                 </ul>
             </div>
@@ -287,11 +334,19 @@
             <h2>RevPay (2023)</h2>
             <p>
                 Collaborated with a team of seven developers to build an application with the core functionalities of
-                sending or requesting money,
-                linking bank accounts, managing transaction history, applying for
-                loans and accepting customer payments.
+                sending or requesting money, linking bank accounts, managing transaction history, applying for
+                loans and accepting customer payments. I designed the bank account and user setting pages, while also
+                overseeing the
+                the integration of the respective backend functionalities to ensure seamless database updates. In
+                addition
+                to my primary responsibilities, I also contributed to various other aspects of the project, including
+                addressing user interface improvements and debugging.
+
             </p>
 
+            <h4>Technologies and Methodologies: </h4>
+            <p>HTML, CSS, TypeScript, React, Java, Spring Framework, Spring Boot, Spring Data, Spring MVC, JDBC,
+                PostgreSQL, JUnit, Mockito, Git, Docker, Postman, REST, Agile-Scrum
             <div>
                 <h4>Links:</h4>
                 <ul>
@@ -314,31 +369,15 @@
                 update, and invite others to the event and users can view the events,
                 respond to invites, and bring dishes.
             </p>
+
+            <h4>Technologies and Methodologies: </h4>
+            <p>HTML, CSS, TypeScript, React, Routing & Switching, Redux, Redux-Sagas, React-Query, GraphQL </p>
+
             <div>
                 <h4>Link:</h4>
                 <ul>
                     <li>
                         <a href="https://github.com/brian-spilman/potlukk-react" target="_blank">Frontend Repository</a>
-                    </li>
-                </ul>
-            </div>
-        </article>
-
-        <article class="portfolio-class">
-            <h2>Character Creator (2023)</h2>
-            <p>
-                Developed an application for creating characters in a game. The User can create characters while
-                specifying attributes,
-                delete characters, and search them using a filter.
-            </p>
-            <div>
-                <h4>Links:</h4>
-                <ul>
-                    <li>
-                        <a href="https://github.com/b26galang/character-app" target="_blank">Frontend Repository</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/b26galang/character-back-end" target="_blank">Backend Repository</a>
                     </li>
                 </ul>
             </div>
@@ -354,6 +393,7 @@
             <img src="img/github-mark-white.svg" alt="GitHub" class="social-icon">
         </a>
     </footer>
+    <script src="portfolio-website.js"></script>
 </body>
 
 </html>
