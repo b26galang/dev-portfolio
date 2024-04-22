@@ -3,7 +3,9 @@
 /* element selectors */
 
 body {
-    font-family: "Roboto Mono", sans-serif; 
+    /* font-family: "ABeeZee", sans-serif; */
+    font-family: "Krub", sans-serif;
+    font-weight: 500;
     margin: 0;
     padding: 0;
 }
@@ -129,7 +131,7 @@ nav ul li a:hover::after {
 }
 
 .main-article {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     display: inline-block;
     max-width: 100%;
     padding: 20px 50px;
@@ -280,7 +282,7 @@ nav ul li a:hover::after {
 
 .portfolio-class {
     /* flex: 1; */
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 
