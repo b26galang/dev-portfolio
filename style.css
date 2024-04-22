@@ -158,6 +158,7 @@ nav ul li a:hover::after {
     height: 600px;
 }
 
+/* will make text responsive to screen size soon! */
 .image-with-text {
     display: flex;
     align-items: flex-start;
@@ -241,7 +242,7 @@ nav ul li a:hover::after {
 
 /*portfolio styles*/
 .container {
-    margin: 100px 400px;
+    margin: 100px 350px;
     justify-content: space-between;
 }
 
@@ -281,6 +282,7 @@ nav ul li a:hover::after {
     border-radius: 50%;
 }
 
+/* will make text responsive to screen size soon! */
 .portfolio-class ul li {
     list-style: none;
 }
