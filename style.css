@@ -11,8 +11,13 @@ body {
 header h1 {
     font-size: 30px;
 }
+
 a {
     text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
 }
 
 p {
@@ -38,6 +43,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
+    color: #fff;
 }
 
 nav ul {
@@ -264,18 +270,33 @@ nav ul li a:hover::after {
 
 /*portfolio styles*/
 .container {
-    height: 100vh;
-    display: flex;
-    margin: 0 auto;
-    padding: 50px;
+    /* height: 100vh; */
+    /* display: flex; */
+    margin: 100px 400px;
     /* max-width: 1100px;
     min-width: 200px; */
     justify-content: space-between;
 }
+
 .portfolio-class {
-    flex: 1;
+    /* flex: 1; */
+    margin-bottom: 100px;
 }
 
+
+.portfolio-class ul li {
+    list-style: none;
+}
+
+.portfolio-class a::before {
+    content: url('img/black-star.svg'); 
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.portfolio-class a:hover {
+    font-weight: bold;
+}
 /* footer styles */
 
 footer {
@@ -291,3 +312,4 @@ footer {
     height: 30px;
     margin: 6px;
 }
+
