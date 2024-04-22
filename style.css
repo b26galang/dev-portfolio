@@ -127,7 +127,7 @@ nav ul li a:hover::after {
 }
 
 #about-me-content {
-    max-width: 60%;
+    max-width: 1200px;
 }
 
 .main-article {
@@ -169,6 +169,7 @@ nav ul li a:hover::after {
 
 .text-container {
     flex: 0 0 60%;
+    margin-right: 20px;
 }
 
 .text-container p {
