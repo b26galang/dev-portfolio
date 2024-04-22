@@ -252,7 +252,6 @@ nav ul li a:hover::after {
 }
 
 .townTalk {
-    height: 400px; /*fix hardcode */
     width: 100%;
     margin: 0 auto;
     object-fit: cover;
@@ -261,6 +260,7 @@ nav ul li a:hover::after {
 .project-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 
@@ -268,10 +268,10 @@ nav ul li a:hover::after {
     position: relative;
     text-align: center;
     margin-right: 30px;
-    width: 5000px;
+    width: 60%;
+    max-width: 9200px;
+    min-width: 350px;
 }
-
-
 
 .project-slideshow button {
     background-color: #000;
@@ -283,14 +283,28 @@ nav ul li a:hover::after {
     border-radius: 50%;
 }
 
-/* will make text responsive to screen size soon! */
 .portfolio-class ul li {
     list-style: none;
+}
+
+.project-description {
+    width: 40%;
 }
 
 .project-description h2 {
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
+    .project-slideshow, .project-description {
+        width: 100%;
+        max-width: none;
+    }
+}
+
 
 .portfolio-class a::before {
     content: url('img/black-star.svg'); 
