@@ -48,21 +48,38 @@ nav ul {
     align-items: center;
 }
 
+nav ul li {
+    position: relative;
+}
+
 nav ul li a {
     display: inline-block;
     padding: 0px 40px;
     color: #fff;
     text-decoration: none;
+    position: relative;
 }
 
-nav ul li a:hover {
-    color: #bfc0d0;
+nav ul li a:hover::before {
+    content: url('img/star2.svg'); 
+    position: absolute;
+    left: 5px;
+}
+
+nav ul li a:hover::after {
+    content: url('img/star2.svg'); 
+    position: absolute;
+    right: 5px;
+}
+
+#page-btns a:last-child {
+    margin-right: 20px;
 }
 
 /* homepage styles */
 #home {
     margin-right: auto;
-    padding-left: 40px;
+    margin-left: 20px;
 }
 
 .home {
@@ -183,6 +200,11 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.experience-content p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
 #education-div {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 40px;
@@ -205,19 +227,19 @@ nav ul li a:hover {
 
 /* tech-stack styles */
 
-#tech-bg {
+#skills-bg {
     background-color: #1E1E1E;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 100px;
 }
 
-#techstack-div {
+#skill-div {
     color: #fff;
     padding: 20px 50px;
     text-decoration: none;
 }
 
-.tech-stack-list {
+.skill-list {
     margin:20px 0px;
     list-style-type: none;
     display: flex;
