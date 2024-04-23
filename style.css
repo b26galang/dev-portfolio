@@ -128,7 +128,7 @@ nav ul li a:hover::after {
 }
 
 #about-me-content {
-    max-width: 1200px;
+    max-width: 1050px;
 }
 
 .main-article {
@@ -156,7 +156,7 @@ nav ul li a:hover::after {
 }
 
 .bio-img {
-    height: 600px;
+    height: 500px;
 }
 
 /* will make text responsive to screen size soon! */
@@ -167,6 +167,7 @@ nav ul li a:hover::after {
 
 .image-container {
     flex: 0 0 40%;
+    text-align: center;
 }
 
 .text-container {
