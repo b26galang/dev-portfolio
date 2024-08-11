@@ -81,6 +81,12 @@ nav ul li a:hover::after {
     right: 5px;
 }
 
+/* re-arrange styles to remove !important */
+.carousel-control-prev::before,
+.carousel-control-next::before {
+  content: none !important;
+}
+
 #page-btns a:last-child {
     margin-right: 20px;
 }
@@ -252,40 +258,10 @@ nav ul li a:hover::after {
     margin-bottom: 80px;
 }
 
-.townTalk {
-    width: 100%;
-    margin: 0 auto;
-    object-fit: cover;
-}
-
 .project-container {
     display: flex;
     flex-direction: row;
     width: 100%;
-}
-
-
-.project-slideshow {
-    position: relative;
-    text-align: center;
-    margin-right: 30px;
-    width: 60%;
-    max-width: 9200px;
-    min-width: 350px;
-}
-
-.project-slideshow button {
-    background-color: #000;
-    color: #fff;
-    height: 25px;
-    width: 30px;
-    font-weight: 400;
-    border: none;
-
-}
-
-.project-slideshow button:hover {
-    font-weight: 700;
 }
 
 .portfolio-class ul li {
