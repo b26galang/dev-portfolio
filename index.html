@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -172,13 +177,6 @@
           </li>
           <li>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png"
-              alt="SASS logo"
-              class="logo"
-            />
-          </li>
-          <li>
-            <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
               alt="JavaScript logo"
               class="logo"
@@ -188,20 +186,6 @@
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
               alt="TypeScript logo"
-              class="logo"
-            />
-          </li>
-          <li>
-            <img
-              src="https://www.php.net/images/logos/new-php-logo.svg"
-              alt="PHP logo"
-              class="logo"
-            />
-          </li>
-          <li>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/VB.NET_Logo.svg/512px-VB.NET_Logo.svg.png"
-              alt="Visual Basic logo"
               class="logo"
             />
           </li>
@@ -247,20 +231,6 @@
             <img
               src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
               alt="Bootstrap logo"
-              class="logo"
-            />
-          </li>
-          <li>
-            <img
-              src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
-              alt="Redux logo"
-              class="logo"
-            />
-          </li>
-          <li>
-            <img
-              src="https://cdn.worldvectorlogo.com/logos/redux-saga.svg"
-              alt="Redux-Saga logo"
               class="logo"
             />
           </li>
@@ -314,20 +284,6 @@
             <img
               src="https://graphql.org/_next/static/media/logo.ad338028.svg"
               alt="GraphQL logo"
-              class="logo"
-            />
-          </li>
-          <li>
-            <img
-              src="img/docker-mark-blue.svg"
-              alt="Docker logo"
-              class="logo"
-            />
-          </li>
-          <li>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/512px-WordPress_blue_logo.svg.png"
-              alt="WordPress logo"
               class="logo"
             />
           </li>
@@ -446,19 +402,63 @@
 
       <article class="portfolio-class">
         <div class="project-container">
-          <div class="project-slideshow">
-            <img class="townTalk" src="img/towncomplaint1.jpg" />
-            <img class="townTalk" src="img/towncomplaint2.jpg" />
-            <img class="townTalk" src="img/towncomplaint3.jpg" />
-            <img class="townTalk" src="img/towncomplaint4.jpg" />
-            <br />
-            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">
-              &#10094;
-            </button>
-            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">
-              &#10095;
-            </button>
+          <div
+            id="townTalkCarousel"
+            class="carousel slide portfolio-carousel mb-4 me-4 w-50"
+          >
+            <ul class="carousel-indicators">
+              <li
+                data-bs-target="#townTalkCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></li>
+              <li data-bs-target="#townTalkCarousel" data-bs-slide-to="0"></li>
+              <li data-bs-target="#townTalkCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#townTalkCarousel" data-bs-slide-to="2"></li>
+              <li data-bs-target="#townTalkCarousel" data-bs-slide-to="3"></li>
+            </ul>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="townTalk d-block w-100" src="img/towncomplaint1.jpg" alt="Town Talk Sign in Page"/>
+              </div>
+              <div class="carousel-item">
+                <img class="townTalk d-block w-100" src="img/towncomplaint2.jpg" alt="Town Talk Council Member Meeting Page"/>
+              </div>
+              <div class="carousel-item">
+                <img class="townTalk d-block w-100" src="img/towncomplaint3.jpg" alt="Town Talk Create Meeting Form Page"/>
+              </div>
+              <div class="carousel-item">
+                <img class="townTalk d-block w-100" src="img/towncomplaint4.jpg" alt="Town Talk Meeting Guest Page"/>
+              </div>
+            </div>
+
+            <a
+              class="carousel-control-prev"
+              href="#townTalkCarousel"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#townTalkCarousel"
+              role="button"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden"></span>
+            </a>
           </div>
+
           <div class="project-description">
             <h2>Town Talk(2023)</h2>
             <p>
@@ -615,6 +615,8 @@
         <img src="img/github-mark-white.svg" alt="GitHub" class="social-icon" />
       </a>
     </footer>
-    <script src="portfolio-website.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
