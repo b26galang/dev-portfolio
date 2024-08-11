@@ -1,9 +1,6 @@
-
-
 /* element selectors */
 
 body {
-    /* font-family: "ABeeZee", sans-serif; */
     font-family: "Krub", sans-serif;
     font-weight: 500;
     margin: 0;
@@ -249,10 +246,11 @@ nav ul li a:hover::after {
 }
 
 /*portfolio styles*/
-.container {
+/*.container {
     margin: 100px 400px;
     justify-content: space-between;
 }
+    */
 
 .portfolio-class {
     margin-bottom: 80px;
